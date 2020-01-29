@@ -1,0 +1,151 @@
+body {
+    background-color: black !important;
+  }
+
+h1 {
+    font-family: Anton;
+}
+
+h2 {
+    font-family: Anton;
+}
+
+p {
+    font-family: Maven Pro;
+}
+
+#home {
+    width: 100%;
+    float: left;
+}
+
+header {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 50px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+li {
+    font-family:Maven Pro;
+}
+.navbar{
+    margin:0;
+    padding:0;
+}
+
+.navbar a {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+/* visited link */
+.navbar :visited {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* mouse over link */
+.navbar a:hover {
+    color: gray;
+    text-decoration: none;
+  }
+  
+  /* selected link */
+.navbar  a:active {
+    color: white;
+    text-decoration: none;
+  }
+h1 {
+    font-family: Anton;
+}
+
+h2 {
+    font-family: Anton;
+}
+
+p {
+    font-family: Maven Pro;
+}
+#abouttitles {
+    min-height: 100%;
+}
+
+#fedtitle {
+    color: #3edbc0;
+}
+
+#gallery {
+    background-color: white;
+    padding-top: 80px;
+    padding-bottom: 250px;
+    -webkit-clip-path: polygon(0 150px, 100% 0, 100% 100%, 0 90%);
+    clip-path: polygon(0 150px, 100% 0, 100% 100%, 0 90%);
+}
+
+#imagery {
+    width: 60%;
+    margin: auto;
+}
+
+#wdtitle {
+    color: #3edbc0;
+}
+
+#contacttitle {
+    color: #3edbc0;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  -ms-flex: 33%; /* IE10 */
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+  }
+
+  .imagehover:hover .image {
+    opacity: 0.3;
+  }
+
+  #maintitle {
+    z-index: 3;
+  }
