@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Maven+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="mystyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -17,30 +18,46 @@
         <header>
             <div id="home">
                 <!--Navigation Menu-->
-                <div id="navigation">
+                <div id="navigation" class="text-center text-md-left">
                     <nav class="navbar navbar-expand-md navbar-dark">
 
+                         <!--Navigation Brand/Logo-->
+                         <section id="navtitle" class="navbar-brand ml-3">
+                            <a href="#carousel" class="text-white mr-0">ANDREW DAVID</a href="#container">
+                            </section>
+
                         <!-- Toggler/collapsibe Button -->
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#listNavigation">
+                        <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#listNavigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-
+                        
                         <!-- Site navigation menu -->
                         <div class="collapse navbar-collapse" id="listNavigation">
                             <ul class="navbar nav mx-md-auto">
-                                <li class="nav-item mr-md-5"><a class="nav-link" href="#carousel">Home</a>
-                                    <li class="nav-item mr-md-5"><a class="nav-link" href="#about">About</a>
-                                        <li class="nav-item mr-md-5"><a class="nav-link" href="#gallery">Gallery</a>
+                                <li class="nav-item mr-lg-5"><a class="nav-link" href="#container">Home</a>
+                                    <li class="nav-item mr-lg-5"><a class="nav-link" href="#about">About</a>
+                                        <li class="nav-item mr-lg-5"><a class="nav-link" href="#gallery">Gallery</a>
                                             <li class="nav-item"><a class="nav-link" href="#contact">Contact</a>
                             </ul>
                         </div>
+
+                         <!--Navigation Brand/Logo-->
+                         <section id="navtitle" class="navbar-brand d-none d-md-block">
+                            <a href="#carousel" class="text-white mr-0">WEB DEVELOPER</a href="#carousel">
+                            </section>
+
                     </nav>
+
                 </div>
 	        </div>
         </header>
 
         <!-- Carousel -->
-        <div id="carousel" class="carousel slide mb-5" data-ride="carousel">
+        <div id="carousel" class="carousel slide mb-5 d-none d-sm-block" data-ride="carousel">
+            <section id="maintitle" class="text-center text-white ">
+                <h1 class="display-1">ANDREW DAVID</h1>
+                <h1 class="display-1 d-none d-md-block bluetitle">WEB DEVELOPER</h1>
+            </section>
             <ol class="carousel-indicators">
                 <li data-target="#carousel" data-slide-to="0" class="active"></li>
                 <li data-target="#carousel" data-slide-to="1"></li>
@@ -65,16 +82,12 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
-            <section id="maintitle" class="text-center display-1 text-white ">
-                <h1>ANDREW DAVID</h1>
-                <h1>WEB DEVELOPER</h1>
-            </section>
 
         </div>
 
         <main class="container-fluid">
             <!-- About content -->
-            <div id="about" class="container">
+            <div id="about" class="container mt-5 mt-md-0">
 
                 <div id="abouttitles" class="text-center mb-3">
                     <section class="row">
@@ -84,7 +97,7 @@
                     </section>
                         <div class="row">
                             <div class="col-lg-9 offset-lg-3">
-                                <h2 id="fedtitle" class="display-4 mt-sm-n4 mb-sm-n3">FRONT END DEVELOPMENT</h2>
+                                <h2 class="display-4 mt-sm-n4 mb-sm-n3 bluetitle">FRONT END DEVELOPMENT</h2>
                             </div>
                         </div>
                         <div class="row">
@@ -97,8 +110,11 @@
                             <img src="images/profilePic.png" alt="Profile Picture" style="width:231px;height:405px;">>
                         </div>
                         <div class="col-md-4 order-md-1 offset-md-3 mt-4 text-center">
-                        <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac neque vitae velit scelerisque volutpat. Suspendisse potenti. Etiam placerat sapien vitae dolor tempus tincidunt. Duis eu lacus mollis, dignissim odio sed, commodo nunc.
-                            <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac neque vitae velit scelerisque volutpat. Suspendisse potenti. Etiam placerat sapien vitae dolor tempus tincidunt. Duis eu lacus mollis, dignissim odio sed, commodo nunc.</p>
+                        <p class="text-white">I am a web developer currently based in Melbourne, Australia. I have experience in both client side and server side development, designing and then building websites with sleek and responsive design. I not only look at a website's look and feel, but also its functionality, creating an experience for the user.
+                            <br>
+                            <br> This site is one example of the work I can do for you. 
+                            <br>
+                            <br>If you are interested in my services or have any questions, please contact me on the form below.</p>
                         </div>
                     </div>
                 </div>
@@ -108,9 +124,9 @@
             <div id="gallery" class="slanted">
                 <div class="mt-5 mb-5">
                     <div id="imagery">
-                        <section class="text-center">
-                            <h2 class="display-1 text-lg-right mb-n4">GALLERY</h2>
-                            <h2 id="wdtitle" class="display-1 text-lg-right">WEB DEV</h2>
+                        <section class="text-center text-black">
+                            <h2 class="display-1 text-lg-right mb-md-n4">GALLERY</h2>
+                            <h2 class="display-1 text-lg-right bluetitle">WEB DEV</h2>
                         </section>
                             <div class="row">
                                 <div class="column">
@@ -164,41 +180,36 @@
             <section id="contact" class="container">
                 <div class="row">
                     <div class="col-md-4 offset-md-1 text-md-right text-center">
-                        <h2 class="text-white display-1 mt-n5">CONTACT</h2>
-                        <section id="contacttitle">
-                            <h2 class="display-1">ME</h2>
-                        </section>
-                        <p class="text-md-right text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac neque vitae velit scelerisque volutpat. Suspendisse potenti.</p>
+                        <h2 class="text-white display-1 mt-5 mt-md-n5">CONTACT</h2>
+                            <h2 class="display-1 bluetitle">ME</h2>
+                        <p class="text-md-right text-white">If you are interested in my services or have any questions, please contact me via the form and I will get back to you within 24 hours.</p>
                     </div>
                     <div class="col-md-5 offset-md-1 text-white">
-                        <form>
+                        <form name="contactform" method="post" action="contact.php">
                             <div class="form-group row">
-                                <label for="firstNameInput" class="col-md-3">First name:</label>
-                                <input type="text" class="form-control col-md-9" id="firstNameInput" placeholder="eg. John">
-                            </div>
+                            <label for="first_name" class="col-md-3">First Name: </label>
+                            <input  type="text" name="first_name" maxlength="50" class="form-control col-md-9" placeholder="eg. John" size="30">
+                           </div>
 
                             <div class="form-group row">
-                                <label for="lastNameInput" class="col-md-3">Last Name:</label>
-                                <input type="text" class="form-control col-md-9" id="lastNameInput" placeholder="eg. Doe">
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="emailInput" class="col-md-3">Email:</label>
-                                <input type="email" class="form-control col-md-9" id="emailInput" placeholder="name@example.com">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="questionBox">Your query:</label>
-                                <div class="row">
-                                    <textarea class="form-control col-md-12 offset-md-" id="questionBox" rows="4"></textarea>
+                            <label for="last_name" class="col-md-3">Last Name: </label>
+                            <input  type="text" name="last_name" maxlength="50" size="30" class="form-control col-md-9" placeholder="eg. Doe">
                                 </div>
+
+                            <div class="form-group row">
+                            <label for="email" class="col-md-3">Email: </label>
+                            <input  type="text" name="email" maxlength="80" size="30" class="form-control col-md-9" placeholder="name@example.com">
+                          </div>
+
+                            <div class="form-group row">
+                            <label for="comments" class="col-md-3">Query: </label>
+                            <textarea  name="comments" maxlength="1000" class="form-control col-md-9 offset-md-" rows="4"></textarea>
                             </div>
 
                             <div class="form-group row">
-                                <input type="submit" class="btn btn-light align-right col-md-2 offset-md-10" value="Submit">
-                            </div>
-                        </form>
-
+                            <input type="submit" value="Submit" class="btn btn-light align-right col-md-2 offset-md-10">
+                        </div>
+                          </form>
                     </div>
                 </div>
             </section>
